@@ -3,7 +3,16 @@ var obj = {
 };
 
 function getSquaredElementsAtProperty(obj, key) {
-    // your code here
+    let empty = []
+    if (obj[key] !== undefined) {
+    for (let i = 0; i < obj[key].length; i++) {
+      let x = obj[key][i]
+      if (x**2) {
+        empty.push(x**2)
+      }
+    }
+  }
+    return empty
 }
 
 var output = getSquaredElementsAtProperty(obj, 'key');

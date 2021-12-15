@@ -1,5 +1,9 @@
 function computeProductOfAllElements(arr) {
-    // your code here
+    let counter = 1
+    for (let i = 0; i < arr.length; i++) {
+        counter*=arr[i]
+    }
+    return counter
 }
 
 var output = computeProductOfAllElements([2, 5, 6]);

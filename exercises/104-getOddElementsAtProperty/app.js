@@ -3,7 +3,16 @@ var obj = {
 };
 
 function getOddElementsAtProperty(obj, key) {
-    // your code here
+    let array = []
+    if (obj[key] !== undefined) {
+      for(let i = 0; i < obj[key].length; i++) {
+        let x = obj[key][i]
+        if (x % 2 !== 0) {
+          array.push(x)
+        }
+      }
+    }
+    return array
 }
 
 var output = getOddElementsAtProperty(obj, 'key');
