@@ -1,5 +1,5 @@
 function findSmallestNumberAmongMixedElements(arr) {
-  if(arr.length ===0) return 0
+  if(arr.length ===0 || arr.find(number=>typeof number === "number")== undefined) return 0
   let counter = 10
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < counter) {
